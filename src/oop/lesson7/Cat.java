@@ -1,9 +1,11 @@
 package oop.lesson7;
 
+import java.util.Arrays;
+
 public class Cat {
-    String color;
+     public String color;
     double weight;
-    String ownerName;
+     private String ownerName;
     public Cat(String color, double weight, String ownerName ){
      this.color = color;
      this.weight = weight;
@@ -24,4 +26,10 @@ public class Cat {
         }
         return "Failure hunt";
     }
+    public void feed(String giver, String ...product){
+        System.out.printf("%s gave the cat  %s \n", giver, Arrays.toString(product));
+
+
+    }
 }
+//80 end
